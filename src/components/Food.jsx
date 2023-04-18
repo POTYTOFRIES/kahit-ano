@@ -71,7 +71,7 @@ const Food = () => {
         {/* Filter Rate */}
         <div>
           <p className='font-bold text-gray-700'>Filter Rate</p>
-          <div className='flex justify-between max-w-[390px] w-full'>
+          <div className='flex flex-col lg:flex-row justify-between max-w-[390px] w-full'>
             <button
               onClick={() => filterRate('⭐')}
               className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
@@ -117,7 +117,7 @@ const Food = () => {
             <div className='flex justify-between px-2 py-4'>
               <p className='font-bold'>{item.name}</p>
               <p>
-                <span className='border-amber-600 text-white p-1 rounded-full'>
+                <span className=' p-1 '>
                   {item.rate}
                 </span>
               </p>

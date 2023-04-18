@@ -2,6 +2,10 @@ import React from 'react';
 
 const HeadlineCards = () => {
   return (
+    <div>
+      <h1 className='text-orange-600 font-bold text-4xl text-center mt-8'>
+        User Picks
+      </h1>
     <div className='max-w-[1640px] mx-auto p-4 py-12 grid md:grid-cols-3 gap-6'>
       {/* Card */}
       <div className='rounded-xl relative'>
@@ -87,6 +91,7 @@ const HeadlineCards = () => {
           alt='/'
         />
       </div>
+    </div>
     </div>
   );
 };
