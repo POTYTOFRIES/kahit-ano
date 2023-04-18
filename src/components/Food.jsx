@@ -14,7 +14,7 @@ const Food = () => {
     );
   };
 
-  //   Filter by price
+  //   Filter by rate
   const filterRate = (rate) => {
     setFoods(
       data.filter((item) => {

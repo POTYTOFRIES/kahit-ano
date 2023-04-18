@@ -5,9 +5,9 @@ function Login () {
   return (
   <div>
     <Navbar />
-  <div class="flex items-center min-h-screen bg-white">
+  <div class="flex items-center min-h-screen ">
     <div class="container mx-auto">
-      <div class="max-w-md mx-auto my-10">
+      <div class="max-w-md mx-auto my-auto -mt-40">
         <div class="text-center">
           <h1 class="my-3 text-3xl font-semibold text-gray-700">Sign in</h1>
           <p class="text-gray-500 ">Sign in to access your account</p>
