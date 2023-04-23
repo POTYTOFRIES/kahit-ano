@@ -4,11 +4,12 @@ import {BsPlusCircleFill} from 'react-icons/bs'
 
 const AddPost = () => {
   return (
-    <div className="fixed bottom-20 right-44 transition-transform hover:rotate-45">
-    <div className="cursor-pointer">
-    <Link to='/post'><BsPlusCircleFill size={70} color="orange" /></Link>
+    
+    <div className="fixed right-12 bottom-12 group transition-transform hover:rotate-45">
+        <Link to='/post'><BsPlusCircleFill size={70} color="orange" /></Link>
     </div>
-    </div>
+
+    
   )
 }
 
