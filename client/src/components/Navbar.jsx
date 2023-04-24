@@ -87,10 +87,12 @@ const Navbar = () => {
             <BiCategoryAlt size={25} color="green" className="mr-4"/>Category
             </li>
             </Link>
-  
+
+            <Link to='/bookmark'>
             <li className="text-xl py-4 flex hover:text-amber-600">
               <BsBookmarkHeart size={25} color="green" className="mr-4" /> Bookmark
             </li>
+            </Link>
 
           </ul>
         </nav>

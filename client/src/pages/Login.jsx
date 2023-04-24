@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import { Link } from "react-router-dom";
 
 function Login () {
   return (
@@ -28,13 +29,15 @@ function Login () {
             <div class="mb-6">
               <button type="button" class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">Sign in</button>
             </div>
-            <p class="text-sm text-center text-gray-400">Don&#x27;t have an account yet? <a href="#!" class="text-indigo-400 focus:outline-none focus:underline focus:text-indigo-500 ">Sign up</a>.</p>
+
+            <Link to='/signup'><p class="text-sm text-center text-gray-400">Don&#x27;t have an account yet? <a href="#!" class="text-indigo-400 focus:outline-none focus:underline focus:text-indigo-500 ">Sign up</a>.</p> </Link>
           </form>
         </div>
       </div>
     </div>
   </div>
   </div>
+
   )
 }
 

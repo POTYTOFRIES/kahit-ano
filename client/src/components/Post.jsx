@@ -1,14 +1,15 @@
-import { useState } from "react";
-import axios from 'axios';
+import React from "react";
 
 export default function Post() {
   return (
-    <div>
+
+    <div className="">
       <form>
         <label for="chat" class="sr-only">
           Your message
         </label>
-        <div class="flex items-center m-12 px-3 py-2 rounded-lg ">
+
+        <div class="flex items-center m-12 px-2 py-2 rounded-lg ">
           <button
             type="button"
             class="inline-flex justify-center p-2 text-gray-900 rounded-lg cursor-pointer hover:text-gray-900 hover:bg-gray-100"
@@ -36,9 +37,10 @@ export default function Post() {
             class="block mx-4 p-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-2 border-gray-400"
             placeholder="Your message..."
           ></textarea>
+          
           <button
             type="submit"
-            class="inline-flex justify-center p-2 text-gray-900 rounded-full cursor-pointer hover:bg-gray-400"
+            class="inline-flex justify-center p-2 text-gray-900 rounded-full border-1 cursor-pointer hover:bg-gray-400"
           >
             <svg
               aria-hidden="true"

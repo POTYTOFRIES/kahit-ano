@@ -4,7 +4,7 @@ const HeadlineCards = () => {
   return (
     <div>
       <h1 className='text-orange-600 font-bold text-4xl text-center mt-8'>
-        User Pick
+        User Pick 
       </h1>
     <div className='max-w-[1640px] mx-auto p-4 py-12 grid md:grid-cols-3 gap-8 '>
       {/* Card */}
@@ -12,8 +12,10 @@ const HeadlineCards = () => {
         {/* Overlay */}
         <div className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
           <p className='font-bold text-2xl px-2 pt-4'>@Potytofries</p>
-          <p className='px-2 mx-4'>This sandwich was the best sandwich I ever tried! 4 star for this one, you can try this sandwich at Breadass.</p>
+          <p className='px-2 mx-4'>This sandwich is the best sandwich I ever tried! 4 star for this one, you can try this sandwich at Breadass.</p>
           <button className='border-white bg-white text-black mx-2 absolute bottom-4'>Show more</button>
+          <p className=' absolute bottom-3 right-5'>⭐⭐⭐⭐</p>
+          <p className='absolute top-1 right-5 text-sm'>Category: Breakfast  </p>
         </div>
         <img
         className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl'
@@ -28,6 +30,8 @@ const HeadlineCards = () => {
           <p className='font-bold text-2xl px-2 pt-4'>@Paork</p>
           <p className='px-2 mx-4'>LOOK AT THAT STEAAAAAAAK! If you're craving for some juicy steak, you can try this at Steakhouse.</p>
           <button className='border-white bg-white text-black mx-2 absolute bottom-4'>Show more</button>
+          <p className=' absolute bottom-3 right-5'>⭐⭐⭐⭐</p>
+          <p className='absolute top-1 right-5 text-sm'>Category: Dinner  </p>
         </div>
         <img
         className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl'
@@ -42,6 +46,8 @@ const HeadlineCards = () => {
           <p className='font-bold text-2xl px-2 pt-4'>@Celssert</p>
           <p className='px-2 mx-4'>Fave fruit as my fave dessert, try it if you love strawberries.</p>
           <button className='border-white bg-white text-black mx-2 absolute bottom-4'>Show more</button>
+          <p className=' absolute bottom-3 right-5'>⭐⭐⭐</p>
+          <p className='absolute top-1 right-5 text-sm'>Category: Dessert  </p>
         </div>
         <img
         className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl'
@@ -56,6 +62,8 @@ const HeadlineCards = () => {
           <p className='font-bold text-2xl px-2 pt-4'>@aMarkano</p>
           <p className='px-2 mx-4'>Kapeng di ka papatulugin ng 3 days. </p>
           <button className='border-white bg-white text-black mx-2 absolute bottom-4'>Show more</button>
+          <p className=' absolute bottom-3 right-5'>⭐⭐</p>
+          <p className='absolute top-1 right-5 text-sm'>Category: Drink  </p>
         </div>
         <img
         className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl'
@@ -70,6 +78,8 @@ const HeadlineCards = () => {
           <p className='font-bold text-2xl px-2 pt-4'>@Acecream</p>
           <p className='px-2 mx-4'>Vanilla Ice cream for lifers.</p>
           <button className='border-white bg-white text-black mx-2 absolute bottom-4'>Show more</button>
+          <p className=' absolute bottom-3 right-5'>⭐⭐⭐</p>
+          <p className='absolute top-1 right-5 text-sm'>Category: Dessert  </p>
         </div>
         <img
         className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl'
@@ -84,6 +94,8 @@ const HeadlineCards = () => {
           <p className='font-bold text-2xl px-2 pt-4'>@BurgerKing</p>
           <p className='px-2 mx-4'>Double cheeseburger 4 star and broke friendly.</p>
           <button className='border-white bg-white text-black mx-2 absolute bottom-4'>Show more</button>
+          <p className=' absolute bottom-3 right-5'>⭐⭐⭐⭐</p>
+          <p className='absolute top-1 right-5 text-sm'>Category: Lunch  </p>
         </div>
         <img
         className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl'
@@ -96,8 +108,10 @@ const HeadlineCards = () => {
         {/* Overlay */}
         <div className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
           <p className='font-bold text-2xl px-2 pt-4'>@Potytofries</p>
-          <p className='px-2 mx-4'>This sandwich was the best sandwich I ever tried! 4 star for this one, you can try this sandwich at Breadass.</p>
+          <p className='px-2 mx-4'>This sandwich is the best sandwich I ever tried! 4 star for this one, you can try this sandwich at Breadass.</p>
           <button className='border-white bg-white text-black mx-2 absolute bottom-4'>Show more</button>
+          <p className=' absolute bottom-3 right-5'>⭐⭐⭐⭐</p>
+          <p className='absolute top-1 right-5 text-sm'>Category: Breakfast  </p>
         </div>
         <img
         className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl'
@@ -112,6 +126,8 @@ const HeadlineCards = () => {
           <p className='font-bold text-2xl px-2 pt-4'>@Paork</p>
           <p className='px-2 mx-4'>LOOK AT THAT STEAAAAAAAK! If you're craving for some juicy steak, you can try this at Steakhouse.</p>
           <button className='border-white bg-white text-black mx-2 absolute bottom-4'>Show more</button>
+          <p className=' absolute bottom-3 right-5'>⭐⭐⭐⭐</p>
+          <p className='absolute top-1 right-5 text-sm'>Category: Dinner  </p>
         </div>
         <img
         className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl'
@@ -126,6 +142,8 @@ const HeadlineCards = () => {
           <p className='font-bold text-2xl px-2 pt-4'>@Celssert</p>
           <p className='px-2 mx-4'>Fave fruit as my fave dessert, try it if you love strawberries.</p>
           <button className='border-white bg-white text-black mx-2 absolute bottom-4'>Show more</button>
+          <p className=' absolute bottom-3 right-5'>⭐⭐⭐</p>
+          <p className='absolute top-1 right-5 text-sm'>Category: Dessert  </p>
         </div>
         <img
         className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl'
@@ -140,6 +158,8 @@ const HeadlineCards = () => {
           <p className='font-bold text-2xl px-2 pt-4'>@aMarkano</p>
           <p className='px-2 mx-4'>Kapeng di ka papatulugin ng 3 days. </p>
           <button className='border-white bg-white text-black mx-2 absolute bottom-4'>Show more</button>
+          <p className=' absolute bottom-3 right-5'>⭐⭐</p>
+          <p className='absolute top-1 right-5 text-sm'>Category: Drink  </p>
         </div>
         <img
         className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl'
@@ -154,6 +174,8 @@ const HeadlineCards = () => {
           <p className='font-bold text-2xl px-2 pt-4'>@Acecream</p>
           <p className='px-2 mx-4'>Vanilla Ice cream for lifers.</p>
           <button className='border-white bg-white text-black mx-2 absolute bottom-4'>Show more</button>
+          <p className=' absolute bottom-3 right-5'>⭐⭐⭐</p>
+          <p className='absolute top-1 right-5 text-sm'>Category: Dessert  </p>
         </div>
         <img
         className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl'
@@ -165,9 +187,11 @@ const HeadlineCards = () => {
       <div className='rounded-xl relative'>
         {/* Overlay */}
         <div className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
-          <p className='font-bold text-2xl px-2 pt-4'>@BurgerKing</p>
+          <p className='font-bold text-2xl px-2 pt-6'>@BurgerKing</p>
           <p className='px-2 mx-4'>Double cheeseburger 4 star and broke friendly.</p>
           <button className='border-white bg-white text-black mx-2 absolute bottom-4'>Show more</button>
+          <p className=' absolute bottom-3 right-5'>⭐⭐⭐⭐</p>
+          <p className='absolute top-1 right-5 text-sm'>Category: Lunch  </p>
         </div>
         <img
         className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl'

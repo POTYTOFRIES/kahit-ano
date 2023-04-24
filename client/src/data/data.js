@@ -132,49 +132,49 @@ export const data = [
 export const categories = [
   {
     id: 1,
-    name: 'Fast Food',
+    name: 'Breakfast',
     image:
       'https://duyt4h9nfnj50.cloudfront.net/new_search_home_eats_icon/FastFood_BrowseHome@3x.png',
   },
   {
     id: 2,
-    name: 'Pizza',
+    name: 'Lunch',
     image:
       'https://duyt4h9nfnj50.cloudfront.net/new_search_home_eats_icon/Pizza_BrowseHome@3x.png',
   },
   {
     id: 3,
-    name: 'Wings',
+    name: 'Dinner',
     image:
       'https://duyt4h9nfnj50.cloudfront.net/new_search_home_eats_icon/Wings_BrowseHome@3x.png',
   },
   {
     id: 4,
-    name: 'Soup',
+    name: 'Dessert',
     image:
       'https://duyt4h9nfnj50.cloudfront.net/new_search_home_eats_icon/Indian_BrowseHome@3x.png',
   },
   {
     id: 5,
-    name: 'Latest Deals',
+    name: 'Drink',
     image:
       'https://duyt4h9nfnj50.cloudfront.net/new_search_home_eats_icon/Deals_BrowseHome@3x.png',
   },
   {
     id: 6,
-    name: 'Restaurant Rewards',
+    name: 'Snacks',
     image:
       'https://duyt4h9nfnj50.cloudfront.net/new_search_home_eats_icon/RestoRewards_BrowseHome@3x.png',
   },
   {
     id: 7,
-    name: 'Best Overall',
+    name: 'World Cuisine',
     image:
       'https://duyt4h9nfnj50.cloudfront.net/new_search_home_eats_icon/TopEats_Browse%20Home@3x.png',
   },
   {
     id: 8,
-    name: 'Shipped Free',
+    name: 'Vegan',
     image:
       'https://duyt4h9nfnj50.cloudfront.net/new_search_home_eats_icon/Placeholder_Plates@3x.png',
   },
