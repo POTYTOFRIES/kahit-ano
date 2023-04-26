@@ -1,21 +1,17 @@
-DROP TABLE users;
-
-
-DROP TABLE IF EXISTS users;
 CREATE TABLE users(
-  id SERIAL NOT NULL,
-  first_name TEXT NOT NULL,
-  last_name TEXT NOT NULL,
-  user_name   VARCHAR NOT NULL,
+  users_id SERIAL PRIMARY KEY,
+  first_name VARCHAR(30) NOT NULL,
+  last_name VARCHAR(30) NOT NULL,
+  username   VARCHAR(30) NOT NULL,
   email VARCHAR (30) NOT NULL,
   password VARCHAR(20) NOT NULL,
   created_at TIMESTAMP
 
 );
 
-DROP TABLE IF EXISTS posts;
 CREATE TABLE posts(
-  id SERIAL NOT NULL,
+  posts_id SERIAL NOT NULL,
+  users_id
   title TEXT NOT NULL,
   body TEXT,
   photo IMAGE,
