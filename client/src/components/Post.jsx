@@ -1,9 +1,28 @@
-import React from "react";
 
-export default function Post() {
+import React  from "react";
+import axios from 'axios'
+
+
+function Post() {
+
+const getUsers = async() => {
+  const response = await axios.get('/all-users')
+        console.log(response.data);
+
+  };
+
   return (
+    
 
     <div className="">
+      <div>
+        <button onClick={
+          () => {
+            getUsers()
+          }
+        }>click</button>
+        
+      </div>
       <form>
         <label for="chat" class="sr-only">
           Your message
@@ -38,7 +57,7 @@ export default function Post() {
             placeholder="Your message..."
           ></textarea>
           
-          <button
+          <button 
             type="submit"
             class="inline-flex justify-center p-2 text-gray-900 rounded-full border-1 cursor-pointer hover:bg-gray-400"
           >
@@ -58,3 +77,5 @@ export default function Post() {
     </div>
   );
 }
+
+export default Post

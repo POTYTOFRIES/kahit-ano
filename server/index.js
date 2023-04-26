@@ -1,6 +1,9 @@
 require('dotenv').config()
 const express = require('express')
+const cors = require('cors')
 const app = express()
+
+const bodyParser = require('body-parser')
 
 const PORT = 8000
 
@@ -13,6 +16,14 @@ const pool = new Pool({
     password: process.env.password,
     port: process.env.port
 })
+
+app.use(cors({
+  origin: ["http://localhost:3000"]}));
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({
+  extended: true
+}))
+
 
 app.listen(PORT, () => {
     console.log(`Listening to port ${PORT}`);
