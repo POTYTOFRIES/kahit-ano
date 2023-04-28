@@ -22,6 +22,10 @@ which will help the app to provide even more accurate recommendations in the fut
 •Users can like a certain post from other user and that will bookmarked that post <br>
 •Users can leave a comment or questions to the Original post
 
+## Wireframe
+Wireframe link: https://www.figma.com/file/aZVVXlQMhWNdsqcjxP4IrZ/Kahit-ano-WIreframe?node-id=0%3A1&t=TeaGlPudvRysBIr9-1
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
