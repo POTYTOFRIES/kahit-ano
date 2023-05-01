@@ -49,7 +49,7 @@ function Signup() {
       last_name: lastname,
       username: username,
       email: email,
-      password: password
+      password: password 
 
     }).then(function (response) {
       console.log(response);

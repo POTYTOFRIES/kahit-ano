@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import HeadlineCards from './components/HeadlineCards'
+import HeadlineCards from './components/Dashboard'
 import AddPost from './components/AddPost';
 import Footer from './components/Footer';
 
