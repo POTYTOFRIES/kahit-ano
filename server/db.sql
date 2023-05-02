@@ -12,10 +12,11 @@ CREATE TABLE users(
 CREATE TABLE posts(
   posts_id SERIAL PRIMARY KEY,
   users_id 
-  title VARCHAR NOT NULL,
-  body TEXT,
-  photo VARCHAR,
-  rate INTEGER (4) NOT NULL,
+  title VARCHAR(30) NOT NULL,
+  body VARCHAR(255),
+  category VARCHAR(30),
+  photo VARCHAR(255),
+  rate INTEGER (5) NOT NULL,
   created_at TIMESTAMP,
   edited_at TIMESTAMP,
   deleted_at TIMESTAMP

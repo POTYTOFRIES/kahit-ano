@@ -36,7 +36,7 @@ app.listen(PORT, () => {
 app.get("/all-users", (request, response) => {
   pool.query("SELECT * FROM users", (error, results) => {
     if (error) {
-      throw error;
+      throw error; 
     }
     response.status(200).json(results.rows);
   });
@@ -108,17 +108,3 @@ app.delete("/delete-user/:id", (request, response) => {
     }
   ); 
 });
-
-// app.post("/auth", (request, response) => {
-//   pool.query(
-//     "SELECT email, password FROM users WHERE email = $1",
-//     [request.body.email],
-//     (error, result) => {
-//       if (error) {
-//         throw error;
-//       }
-
-//       response.send(JSON.stringify(result.rows[0].password));
-//     }
-//   );
-// });

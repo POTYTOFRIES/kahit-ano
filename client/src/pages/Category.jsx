@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar.jsx';
 import { categories } from '../data/data.js';
 import Food from '../components/Food.jsx';
+import Footer from '../components/Footer.jsx';
 
 const Category = () => {
   console.log(categories);
@@ -26,6 +27,7 @@ const Category = () => {
         ))}
       </div>  */}
     </div>
+    <Footer />
     </div>
   );
 };
