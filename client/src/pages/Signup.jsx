@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
+import { toast } from "react-toastify";
 
 function Signup() {
+  const navigate = useNavigate();
   const [users, setUsers] = useState ([]);
   const [firstname, setFirstname] = useState ('');
   const [lastname, setLastname] = useState ('');
@@ -22,11 +24,17 @@ function Signup() {
   }, [users])
 
   const handleChangeFirstname = (event) => {
-    setFirstname(event.target.value)
+    let value = event.target.value;
+
+    value = value.replace(/[^A-Za-z\s]/gi, "");
+    setFirstname(value)
   };
 
   const handleChangeLastname = (event) => {
-    setLastname(event.target.value)
+      let value = event.target.value;
+
+    value = value.replace(/[^A-Za-z\s]/gi, "");
+    setLastname(value)
   };
 
   const handleChangeUsername= (event) => {
@@ -52,7 +60,9 @@ function Signup() {
       password: password 
 
     }).then(function (response) {
-      console.log(response);
+      console.log(response.data);
+      toast.success("Registered!");
+      navigate("/login");
     })
     .catch(function (error) {
       console.log(error);

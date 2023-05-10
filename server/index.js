@@ -1,9 +1,11 @@
+const generateJwt = require('./jwt/token_generator')
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const app = express();
-
+const bcrypt = require("bcrypt");
 const bodyParser = require("body-parser");
+
 
 const PORT = 8000;
 
@@ -62,17 +64,16 @@ app.post("/add-user", (request, response) => {
   const { first_name, last_name, username, email, password, created_at } =
     request.body;
 
-  pool.query(
-    "INSERT INTO users (first_name, last_name, username, email, password, created_at) VALUES ($1, $2, $3, $4, $5, $6)",
-    [first_name, last_name, username, email, password, created_at],
-    (error, results) => {
-      if (error) {
-        throw error;
-      }
+  const encryptedPassword = bcrypt.hashSync(password, 10)
 
-      response.status(201).send("User added");
-    }
-  );
+  const newUser = pool.query(
+    "INSERT INTO users (first_name, last_name, username, email, password, created_at) VALUES ($1, $2, $3, $4, $5, $6)",
+    [first_name, last_name, username, email, encryptedPassword, created_at]);
+ 
+  // const token = generateJwt(newUser.rows[0])
+  // response.json({token}) 
+
+  response.send('uses added succesfully')
 });
 
 // put
