@@ -5,6 +5,10 @@ import axios from 'axios';
 import { toast } from "react-toastify";
 
 function Signup() {
+  // const config = {
+  //   headers:{
+  //     Authorization: `Bearer ${localStorage.getItem('jwt_token')}` }
+  // };
   const navigate = useNavigate();
   const [users, setUsers] = useState ([]);
   const [firstname, setFirstname] = useState ('');
@@ -60,6 +64,7 @@ function Signup() {
       password: password 
 
     }).then(function (response) {
+      localStorage.setItem('jwt_token', response.data)
       console.log(response.data);
       toast.success("Registered!");
       navigate("/login");

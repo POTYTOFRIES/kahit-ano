@@ -1,7 +1,10 @@
-import React from "react";
+import React, { Fragment, useState } from "react";
+import PostModal from "./PostModal";
 
 const Dashboard = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
+    <Fragment>
     <div>
       <h1 className="text-orange-600 font-bold text-4xl text-center mt-8">
         User Pick
@@ -11,17 +14,13 @@ const Dashboard = () => {
         <div className="rounded-xl relative ">
           {/* Overlay */}
           <div className="absolute w-full h-full bg-black/50 rounded-xl text-white">
-            <img
-              className="w-24 h-24 rounded-full border-2 border-amber-700 absolute ml-2 top-2 "
-              src="char.png"
-              alt=""
-            />
-            <p className="font-bold text-2xl pl-28 px-2 pt-4">@Potytofries</p>
-            <p className="px-2 pl-32 mx-4">
+           
+            <p className="font-bold text-2xl pl-4 px-2 pt-4">@Potytofries</p>
+            <p className="px-2 pl-8 mx-4">
               This sandwich is the best sandwich I ever tried! 4 star for this
               one, you can try this sandwich at Breadass.
             </p>
-            <button className="border-white bg-white text-black mx-2 absolute bottom-4">
+            <button className="border-white bg-white text-black mx-2 absolute bottom-4" onClick={() => setShowModal(true)}>
               Show more
             </button>
             <p className=" absolute bottom-3 right-5">⭐⭐⭐⭐</p>
@@ -39,18 +38,14 @@ const Dashboard = () => {
         <div className="rounded-xl relative">
           {/* Overlay */}
           <div className="absolute w-full h-full bg-black/50 rounded-xl text-white">
-          <img
-              className="w-24 h-24 rounded-full border-2 border-amber-700 absolute ml-2 top-2 "
-              src="6.jpg"
-              alt=""
-            />
+        
             
-            <p className="font-bold text-2xl pl-28 px-2 pt-4">@Paork</p>
-            <p className="px-2 pl-32 mx-4">
+            <p className="font-bold text-2xl pl-4 px-2 pt-4">@Paork</p>
+            <p className="px-2 pl-8 mx-4">
               LOOK AT THAT STEAAAAAAAK! If you're craving for some juicy steak,
               you can try this at Steakhouse.
             </p>
-            <button className="border-white bg-white text-black mx-2 absolute bottom-4">
+            <button className="border-white bg-white text-black mx-2 absolute bottom-4" onClick={() => setShowModal(true)}>
               Show more
             </button>
             <p className=" absolute bottom-3 right-5">⭐⭐⭐⭐</p>
@@ -66,17 +61,12 @@ const Dashboard = () => {
         <div className="rounded-xl relative">
           {/* Overlay */}
           <div className="absolute w-full h-full bg-black/50 rounded-xl text-white">
-          <img
-              className="w-24 h-24 rounded-full border-2 border-amber-700 absolute ml-2 top-2 "
-              src="1.jpg"
-              alt=""
-            />
-            
-            <p className="font-bold text-2xl pl-28 px-2 pt-4">@Celssert</p>
-            <p className="px-2 pl-32 mx-4">
+         
+            <p className="font-bold text-2xl pl-4 px-2 pt-4">@Celssert</p>
+            <p className="px-2 pl-8 mx-4">
               Fave fruit as my fave dessert, try it if you love strawberries.
             </p>
-            <button className="border-white bg-white text-black mx-2 absolute bottom-4">
+            <button className="border-white bg-white text-black mx-2 absolute bottom-4" onClick={() => setShowModal(true)}>
               Show more
             </button>
             <p className=" absolute bottom-3 right-5">⭐⭐⭐</p>
@@ -92,16 +82,10 @@ const Dashboard = () => {
         <div className="rounded-xl relative">
           {/* Overlay */}
           <div className="absolute w-full h-full bg-black/50 rounded-xl text-white">
-          <img
-              className="w-24 h-24 rounded-full border-2 border-amber-700 absolute ml-2 top-2 "
-              src="4.jpg"
-              alt=""
-            />
-            
-            
-            <p className="font-bold text-2xl pl-28 px-2 pt-4">@aMarkano</p>
-            <p className="px-2 pl-32 mx-4">Kapeng di ka papatulugin ng 3 days. </p>
-            <button className="border-white bg-white text-black mx-2 absolute bottom-4">
+          
+            <p className="font-bold text-2xl pl-4 px-2 pt-4">@aMarkano</p>
+            <p className="px-2 pl-8 mx-4">Kapeng di ka papatulugin ng 3 days. </p>
+            <button className="border-white bg-white text-black mx-2 absolute bottom-4" onClick={() => setShowModal(true)}>
               Show more
             </button>
             <p className=" absolute bottom-3 right-5">⭐⭐</p>
@@ -117,16 +101,10 @@ const Dashboard = () => {
         <div className="rounded-xl relative">
           {/* Overlay */}
           <div className="absolute w-full h-full bg-black/50 rounded-xl text-white">
-          <img
-              className="w-24 h-24 rounded-full border-2 border-amber-700 absolute ml-2 top-2 "
-              src="5.jpg"
-              alt=""
-            />
-            
-            
-            <p className="font-bold text-2xl pl-28 px-2 pt-4">@Acecream</p>
-            <p className="px-2 pl-32 mx-4">Vanilla Ice cream for lifers.</p>
-            <button className="border-white bg-white text-black mx-2 absolute bottom-4">
+    
+            <p className="font-bold text-2xl pl-4 px-2 pt-4">@Acecream</p>
+            <p className="px-2 pl-8 mx-4">Vanilla Ice cream for lifers.</p>
+            <button className="border-white bg-white text-black mx-2 absolute bottom-4" onClick={() => setShowModal(true)}>
               Show more
             </button>
             <p className=" absolute bottom-3 right-5">⭐⭐⭐</p>
@@ -142,17 +120,12 @@ const Dashboard = () => {
         <div className="rounded-xl relative">
           {/* Overlay */}
           <div className="absolute w-full h-full bg-black/50 rounded-xl text-white">
-          <img
-              className="w-24 h-24 rounded-full border-2 border-amber-700 absolute ml-2 top-2 "
-              src="2.jpg"
-              alt=""
-            />
-            
-            <p className="font-bold text-2xl pl-28 px-2 pt-4">@BurgerKing</p>
-            <p className="px-2 pl-32 mx-4">
+  
+            <p className="font-bold text-2xl pl-4 px-2 pt-4">@BurgerKing</p>
+            <p className="px-2 pl-8 mx-4">
               Double cheeseburger 4 star and broke friendly.
             </p>
-            <button className="border-white bg-white text-black mx-2 absolute bottom-4">
+            <button className="border-white bg-white text-black mx-2 absolute bottom-4" onClick={() => setShowModal(true)}>
               Show more
             </button>
             <p className=" absolute bottom-3 right-5">⭐⭐⭐⭐</p>
@@ -167,6 +140,9 @@ const Dashboard = () => {
         
         </div>
       </div>
+      <PostModal isVisible={showModal} onClose={() =>
+      setShowModal(false)} />
+      </Fragment>
   );
 };
 

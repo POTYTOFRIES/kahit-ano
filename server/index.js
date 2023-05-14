@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 const bcrypt = require("bcrypt");
 const bodyParser = require("body-parser");
-
+const token = require("./middleware/auth")
 
 const PORT = 8000;
 
@@ -66,14 +66,19 @@ app.post("/add-user", (request, response) => {
 
   const encryptedPassword = bcrypt.hashSync(password, 10)
 
-  const newUser = pool.query(
+  pool.query(
     "INSERT INTO users (first_name, last_name, username, email, password, created_at) VALUES ($1, $2, $3, $4, $5, $6)",
-    [first_name, last_name, username, email, encryptedPassword, created_at]);
+    [first_name, last_name, username, email, encryptedPassword, created_at], (error, results) => {
+      if (error){
+        throw error;
+      }
+      const token = generateJwt({...request.body, password:encryptedPassword})
+      response.status(201).json(token)
+
+    });
  
   // const token = generateJwt(newUser.rows[0])
   // response.json({token}) 
-
-  response.send('uses added succesfully')
 });
 
 // put

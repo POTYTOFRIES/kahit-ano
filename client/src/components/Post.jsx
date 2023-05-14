@@ -3,7 +3,9 @@ import axios from "axios";
 import Ratings from "./Ratings";
 
 
-function Post() {
+const Post = ({isVisible, onClose}) => {
+  if ( !isVisible ) return null;
+
   const getUsers = async () => {
     const response = await axios.get("/all-users");
     console.log(response.data);
@@ -14,9 +16,9 @@ function Post() {
   }
 
   return (
-    <div className="">
+    <div className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center">
       <div>
-        <button className="border-0"
+        <button className="border-0 "
           onClick={() => {
             getUsers();
           }}
@@ -24,20 +26,20 @@ function Post() {
           
         </button>
       </div>
-      <div>
-        <div class="heading text-center font-bold text-2xl m-5 text-gray-800">
+      <div className="w-[800px] flex flex-col">
+        <div class="heading text-center font-bold text-2xl m-5 text-gray-200">
           New Post
         </div>
 
-        <div class="editor mx-auto rounded-xl w-10/12 flex flex-col text-gray-800 border border-gray-300 p-4 shadow-lg max-w-2xl">
+        <div class="editor mx-auto rounded-xl bg-gray-100 w-10/12 flex flex-col text-gray-800 border border-gray-500 p-4 shadow-lg max-w-2xl">
           <input
-            class="title bg-gray-100 border border-gray-300 p-2 mb-4 outline-none"
+            class="title bg-gray-200 border rounded-lg border-gray-300 p-2 mb-4 outline-none"
             spellcheck="false"
             placeholder="Title"
             type="text"
           />
           <textarea
-            class="description bg-gray-100 sec p-3 h-60 border border-gray-300 outline-none"
+            class="description bg-gray-200 sec p-3 h-60 border rounded-lg border-gray-300 outline-none"
             spellcheck="false"
             placeholder="Describe everything about this post here"
           ></textarea>
@@ -76,7 +78,7 @@ function Post() {
           </div>
 
           <div class="buttons flex">
-            <div class="btn border border-gray-300 p-1 px-4 font-semibold cursor-pointer text-gray-500 ml-auto">
+            <div class="btn border border-gray-300 p-1 px-4 font-semibold cursor-pointer text-gray-500 ml-auto" onClick={() => onClose()}>
               Cancel
             </div>
             <div class="btn border border-indigo-500 p-1 px-4 font-semibold cursor-pointer text-gray-200 ml-2 bg-indigo-500">
