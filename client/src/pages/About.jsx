@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import NavbarLogin from "../components/NavbarLogin";
 import Footer from "../components/Footer";
 
 function About() {
   return (
     <div>
-      <Navbar />
+      <NavbarLogin />
 
       <div className=" m-auto px-4">
         <h1 className="text-orange-500 font-bold text-4xl text-center mt-8">

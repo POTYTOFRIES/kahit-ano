@@ -10,6 +10,7 @@ function Signup() {
   //     Authorization: `Bearer ${localStorage.getItem('jwt_token')}` }
   // };
   const navigate = useNavigate();
+  const [isSame, setIsSame] = useState(true)
   const [users, setUsers] = useState ([]);
   const [firstname, setFirstname] = useState ('');
   const [lastname, setLastname] = useState ('');
@@ -72,6 +73,18 @@ function Signup() {
     .catch(function (error) {
       console.log(error);
     });
+  }
+
+  const confirmPassword = (e) => {
+    
+    const initialPassword = password
+    const confirm = e.target.value
+ 
+    if (initialPassword.includes(confirm)) {
+      setIsSame(true)
+    }else {
+      setIsSame(false)
+    }
   }
 
 
@@ -166,9 +179,10 @@ function Signup() {
                   <input
                     type="password"
                     name="confirm password"
-                    id="confirm password"
+                    id="error"
                     placeholder="Confirm Password"
-                    class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 "
+                    class={`w-full px-3 py-2 placeholder-gray-300 ${isSame ? 'focus:border-slate-400 focus:ring-slate-300' : 'focus:border-red-600 focus:ring-red-600'} border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300`}
+                    onChange={ confirmPassword}
                   />
                 </div>
                 

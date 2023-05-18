@@ -1,20 +1,15 @@
-import React, {useState, Fragment} from "react";
-import NavbarLogin from "../components/NavbarLogin";
-import Footer from "../components/Footer";
-import PostModal from "../components/PostModal";
+import React, { Fragment, useState } from "react";
+import PostModal from "./PostModal";
 
-export default function Bookmark() {
+const DashboardLogin = () => {
   const [showModal, setShowModal] = useState(false);
   return (
     <Fragment>
     <div>
-      <NavbarLogin />
-
-      <div>
-        <h1 className="text-orange-600 font-bold text-4xl text-center mt-8">
-          Bookmark
-        </h1>
-        <div className="max-w-[1640px] mx-auto p-4 py-12 grid md:grid-cols-2 gap-8 ">
+      <h1 className="text-orange-600 font-bold text-4xl text-center mt-8">
+        User Pick
+      </h1>
+      <div className="max-w-[1640px] mx-auto p-4 py-12 grid md:grid-cols-2 gap-8 ">
         {/* Card */}
         <div className="rounded-xl relative ">
           {/* Overlay */}
@@ -83,12 +78,72 @@ export default function Bookmark() {
             alt="/"
           />
         </div>
+        {/* Card */}
+        <div className="rounded-xl relative">
+          {/* Overlay */}
+          <div className="absolute w-full h-full bg-black/50 rounded-xl text-white">
+          
+            <p className="font-bold text-2xl pl-4 px-2 pt-4">@aMarkano</p>
+            <p className="px-2 pl-8 mx-4">Kapeng di ka papatulugin ng 3 days. </p>
+            <button className="border-white bg-white text-black mx-2 absolute bottom-4" onClick={() => setShowModal(true)}>
+              Show more
+            </button>
+            <p className=" absolute bottom-3 right-5">⭐⭐</p>
+            <p className="absolute top-1 right-5 text-sm">Category: Drink </p>
+          </div>
+          <img
+            className="max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl"
+            src="https://images.unsplash.com/photo-1565065963005-92ba391a8ebc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+            alt="/"
+          />
+        </div>
+        {/* Card */}
+        <div className="rounded-xl relative">
+          {/* Overlay */}
+          <div className="absolute w-full h-full bg-black/50 rounded-xl text-white">
+    
+            <p className="font-bold text-2xl pl-4 px-2 pt-4">@Acecream</p>
+            <p className="px-2 pl-8 mx-4">Vanilla Ice cream for lifers.</p>
+            <button className="border-white bg-white text-black mx-2 absolute bottom-4" onClick={() => setShowModal(true)}>
+              Show more
+            </button>
+            <p className=" absolute bottom-3 right-5">⭐⭐⭐</p>
+            <p className="absolute top-1 right-5 text-sm">Category: Dessert </p>
+          </div>
+          <img
+            className="max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl"
+            src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=708&q=80"
+            alt="/"
+          />
+        </div>
+        {/* Card */}
+        <div className="rounded-xl relative">
+          {/* Overlay */}
+          <div className="absolute w-full h-full bg-black/50 rounded-xl text-white">
+  
+            <p className="font-bold text-2xl pl-4 px-2 pt-4">@BurgerKing</p>
+            <p className="px-2 pl-8 mx-4">
+              Double cheeseburger 4 star and broke friendly.
+            </p>
+            <button className="border-white bg-white text-black mx-2 absolute bottom-4" onClick={() => setShowModal(true)}>
+              Show more
+            </button>
+            <p className=" absolute bottom-3 right-5">⭐⭐⭐⭐</p>
+            <p className="absolute top-1 right-5 text-sm">Category: Lunch </p>
+          </div>
+          <img
+            className="max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl"
+            src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1400&q=60"
+            alt="/"
+          />
+        </div>
+        
+        </div>
       </div>
-      </div>
-      <Footer />
-    </div>
-    <PostModal isVisible={showModal} onClose={() =>
+      <PostModal isVisible={showModal} onClose={() =>
       setShowModal(false)} />
-    </Fragment>
+      </Fragment>
   );
-}
+};
+
+export default DashboardLogin;

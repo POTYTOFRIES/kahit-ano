@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../components/Navbar.jsx';
+import NavbarLogin from '../components/NavbarLogin.jsx';
 import { categories } from '../data/data.js';
 import Food from '../components/Food.jsx';
 import Footer from '../components/Footer.jsx';
@@ -8,7 +8,7 @@ const Category = () => {
   console.log(categories);
   return (
     <div>
-      <Navbar />
+      <NavbarLogin />
       <Food />
     <div className='max-w-[1640px] m-auto px-4 py-12'>
       {/* <h1 className='text-orange-600 font-bold text-4xl text-center'>
