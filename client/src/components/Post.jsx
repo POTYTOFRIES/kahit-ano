@@ -44,11 +44,8 @@ function Post({ isVisible, onClose }) {
   const handlePhoto = (e) => {
     setIsUploading(true);
     const file = e.target.files[0];
-
-    //FormData is used when sending files to the backend so the endpoint can read it
     const formData = new FormData();
     formData.append("file", file);
-    //line 80-84 is uploading to cloudinary
     axios
       .post("http://localhost:8000/upload-photo", formData, {
         headers: {

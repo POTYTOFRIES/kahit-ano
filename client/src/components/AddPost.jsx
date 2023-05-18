@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from 'react'
 import Post from './Post';
-// import { Link } from "react-router-dom";
 import {BsPlusCircleFill} from 'react-icons/bs'
 
 

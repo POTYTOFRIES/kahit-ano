@@ -12,8 +12,7 @@ function App() {
         <Navbar />
         <Hero />
         <Dashboard />
-        <Footer />
-        
+        <Footer />       
     </div>
   );
 }

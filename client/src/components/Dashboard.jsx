@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from "react";
 import PostModal from "./PostModal";
-// import axios from 'axios'
 
 const Dashboard = () => {
   const [showModal, setShowModal] = useState(false);

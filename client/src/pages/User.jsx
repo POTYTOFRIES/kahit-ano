@@ -35,7 +35,8 @@ function User(props) {
                 <img
                   src="char.png"
                   alt="pfp"
-                  class="shadow-xl rounded-full align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-[150px]"/>
+                  class="shadow-xl rounded-full align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-[150px]"
+                />
               </div>
             </div>
             <div class="w-full text-center mt-20">
